@@ -3,10 +3,6 @@ From portfolio_project_1..Covid_deaths$
 Where continent is not null 
 order by 3,4
 
---Select *
---From portfolio_project_1..Covid_vaccinations
---order by 3,4
-
 --Select Data that I am going to use
 Select location, date, total_cases, new_cases, total_deaths, population
 From portfolio_project_1..Covid_deaths$
@@ -19,7 +15,7 @@ Order by 1,2
 Select location, date, total_cases, total_deaths, (total_deaths/total_cases)*100 as Death_percentage
 From portfolio_project_1..Covid_deaths$
 Where continent is not null 
-Where location like '%Canada%'
+--Where location like '%Canada%'
 Order by 1,2
 
 
